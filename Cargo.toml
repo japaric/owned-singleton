@@ -1,0 +1,20 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+categories = ["no-std"]
+description = "Owned singletons"
+keywords = ["owned", "singleton", "proxy"]
+license = "MIT OR Apache-2.0"
+name = "owned-singleton"
+readme = "README.md"
+repository = "https://github.com/japaric/owned-singleton"
+version = "0.1.0"
+
+[dependencies]
+owned-singleton-macros = { path = "macros", version = "0.1.0" }
+
+[dependencies.stable_deref_trait]
+version = "1.1.1"
+default-features = false
+
+[workspace]
+members = ["macros"]
